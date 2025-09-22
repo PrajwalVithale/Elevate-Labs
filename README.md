@@ -1,4 +1,4 @@
-# Responsive Landing Page
+# Responsive Landing Page(Task 1)
 
 This project is a simple **responsive landing page** built using **HTML5** and **CSS3**.  
 It was created as part of a web development internship task to practice **Flexbox, Grid, and Media Queries**.
