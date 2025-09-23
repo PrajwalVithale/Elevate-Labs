@@ -73,9 +73,9 @@ Built with **HTML, CSS, and JavaScript**, it allows users to add, complete, and 
 ## 🖼️ Screenshots
 
 ### Light Mode
-![Todo List Light Mode](light.png "Light mode view of the Todo List App")
+![Todo List Light Mode](Light.png "Light mode view of the Todo List App")
 
 ### Dark Mode
-![Todo List Dark Mode](dark.png "Dark mode view of the Todo List App")
+![Todo List Dark Mode](Dark.png "Dark mode view of the Todo List App")
 
 ---
