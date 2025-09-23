@@ -22,7 +22,7 @@ body {
   h1 {
     margin-bottom: 30px;
     font-size: 36px;
-    color: #007bff;   /* 🔵 Accent color for heading */
+    color: #007bff;
   }
   
   .input-section {
@@ -64,7 +64,7 @@ body {
   
   li {
     background: #f1f1f1;
-    padding: 18px 20px 18px 50px; /* space for ✔ */
+    padding: 18px 20px 18px 50px;
     margin: 10px 0;
     border-radius: 8px;
     display: flex;
@@ -115,10 +115,9 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  
-  /* ===== Dark Theme ===== */
+
   body.dark {
-    background: #1e1e1e;  /* simple plain dark */
+    background: #1e1e1e;
     color: #eee;
   }
   
@@ -130,7 +129,7 @@ body {
   }
   
   body.dark h1 {
-    color: #4a90e2;   /* 🌙 Different accent in dark mode */
+    color: #4a90e2;
   }
   
   body.dark input {
@@ -178,7 +177,7 @@ body {
       width: 100%;
     }
   }
-/* Input box style */
+
 input#taskInput {
     padding: 10px 15px;
     border-radius: 6px;
@@ -191,19 +190,16 @@ input#taskInput {
     color: var(--input-text);
 }
 
-/* Empty input / error state */
 input#taskInput.empty {
     border-color: red;
 }
 
-/* Light mode colors */
 :root {
     --input-border: #ccc;
     --input-bg: #fff;
     --input-text: #333;
 }
 
-/* Dark mode colors (matches your JS toggle) */
 body.dark {
     --input-border: #555;
     --input-bg: #333;

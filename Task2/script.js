@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const taskText = taskInput.value.trim();
   
       if (taskText === '') {
-        taskInput.classList.add('empty'); // show red border
-        return; // prevent adding empty task
+        taskInput.classList.add('empty');
+        return;
       } else {
         taskInput.classList.remove('empty');
       }
@@ -37,13 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
       taskInput.value = "";
     });
-  
-    // Clear All Tasks
+
     clearBtn.addEventListener("click", () => {
       taskList.innerHTML = "";
     });
-  
-    // Theme Toggle
+
     themeToggle.addEventListener("click", () => {
       document.body.classList.toggle("dark");
       themeToggle.textContent = document.body.classList.contains("dark")
