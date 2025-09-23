@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 50px 60px;
+    border-radius: 16px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #007bff;   /* 🔵 Accent color for heading */
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+  
+  button {
+    padding: 14px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #f1f1f1;
+    padding: 18px 20px 18px 50px; /* space for ✔ */
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  li:hover {
+    background: #e0e0e0;
+    transform: scale(1.01);
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  li.completed::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    position: absolute;
+    left: 18px;
+    font-size: 20px;
+  }
+  
+  .remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .remove-btn:hover {
+    background: darkred;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ===== Dark Theme ===== */
+  body.dark {
+    background: #1e1e1e;  /* simple plain dark */
+    color: #eee;
+  }
+  
+  
+  body.dark .container {
+    background: #2a2a2a;
+    color: #eee;
+    box-shadow: 0px 6px 18px rgba(255,255,255,0.1);
+  }
+  
+  body.dark h1 {
+    color: #4a90e2;   /* 🌙 Different accent in dark mode */
+  }
+  
+  body.dark input {
+    background: #333;
+    border: 1px solid #555;
+    color: #eee;
+  }
+  
+  body.dark button {
+    background: #4a90e2;
+  }
+  
+  body.dark button:hover {
+    background: #357abd;
+  }
+  
+  body.dark li {
+    background: #444;
+    color: #eee;
+  }
+  
+  body.dark li.completed {
+    background: #2e7d32;
+    color: #c8e6c9;
+  }
+  
+  body.dark li.completed::before {
+    color: #90ee90;
+  }
+  
+  body.dark .remove-btn {
+    background: #e74c3c;
+  }
+  
+  body.dark .remove-btn:hover {
+    background: #c0392b;
+  }
+
+  @media (max-width: 500px) {
+    .input-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, button {
+      width: 100%;
+    }
+  }
+/* Input box style */
+input#taskInput {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 2px solid var(--input-border);
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+}
+
+/* Empty input / error state */
+input#taskInput.empty {
+    border-color: red;
+}
+
+/* Light mode colors */
+:root {
+    --input-border: #ccc;
+    --input-bg: #fff;
+    --input-text: #333;
+}
+
+/* Dark mode colors (matches your JS toggle) */
+body.dark {
+    --input-border: #555;
+    --input-bg: #333;
+    --input-text: #eee;
+}
