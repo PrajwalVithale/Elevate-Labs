@@ -182,20 +182,17 @@
     btn.addEventListener("click", function(e) {
       e.preventDefault();
       const imgSrc = this.getAttribute("data-img");
-      modal.style.display = "flex"; // use flex, not block
+      modal.style.display = "flex";
       modalImg.src = imgSrc;
     });
   });
 
-  // Close when clicking X
   span.onclick = () => modal.style.display = "none";
 
-  // Close when clicking outside
   window.onclick = (e) => {
     if (e.target === modal) modal.style.display = "none";
   };
 
-  // Ensure modal is hidden on page load
   window.onload = () => {
     modal.style.display = "none";
   };

@@ -26,11 +26,11 @@ header {
   background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
             url("images/light-tech-bg.jpg") no-repeat center/cover;
 
-  color: #111; /* dark text now, since bg is light */
+  color: #111;
   text-align: center;
 }
 .hero h1 span {
-  color: #ff9800; /* keep orange accent */
+  color: #ff9800;
 }
 
 .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
@@ -58,7 +58,7 @@ h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #ff9800; /* or pick a theme color */
+  color: #ff9800;
 }
 
 
@@ -103,7 +103,7 @@ footer { background: #111; color: #fff; text-align: center; padding: 1rem; margi
 
 /* Modal Styles */
 .modal {
-  display: none; /* hide first */
+  display: none;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -124,9 +124,7 @@ footer { background: #111; color: #fff; text-align: center; padding: 1rem; margi
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   animation: zoomIn 0.3s ease-in-out;
-
-  margin: auto;      /* <-- force centering */
-  display: block;    /* removes inline behavior */
+  display: block;
 }
 
 

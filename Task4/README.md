@@ -6,36 +6,45 @@ Convert an existing desktop-only webpage into a **mobile-friendly layout** using
 ---
 
 ## ✨ Main Features
-- Implemented **responsive design** with `@media` queries.  
-- Adjusted **layouts**: stacked columns vertically on smaller screens.  
-- Scaled **images** properly within containers.  
-- Made **navigation menu** stack vertically for mobile view.  
-- Optimized **font sizes and spacing** for readability.  
-- Fixed **overflow and scrolling issues**.  
-- Tested responsiveness using **Chrome DevTools (device toolbar)**.  
+- Responsive design using `@media` queries  
+- Layout adapts for desktop, tablet, and mobile  
+- Images scale properly  
+- Font sizes and spacing optimized for readability  
 
 ---
 
 ## 🌐 About My Portfolio
-This project is my **personal portfolio website**, where I showcase:  
-- 👨‍💻 **About Me** – short introduction and career goals  
-- 🛠️ **Skills** – technologies like HTML, CSS, JavaScript, React, Java, Spring Boot  
-- 📂 **Projects** – hands-on applications with GitHub links  
-- 🎓 **Experience & Education** – internship details and academic background  
-- 🏆 **Achievements & Certificates** – displayed with a modern card and modal viewer  
+This project is my **personal portfolio website** with the following sections:  
+- About Me  
+- Skills  
+- Projects  
+- Experience & Education  
+- Achievements & Certificates  
 
-The website is designed to be **simple, responsive, and professional**, making it easy to view on both desktop and mobile devices.  
+---
+
+## 📸 Screenshots
+
+### 💻 Desktop View
+![Desktop Screenshot](Images/LaptopSS.png.png)
+
+### 📱 Tablet View
+![Tablet Screenshot](Images/TabletSS.png.png)
+
+### 📱 Mobile View
+![Mobile Screenshot](Images/MobileSS.png.png)
+
+### 📱 About Section View
+![About Section Screenshot](Images/aboutSectionSS.png)
 
 ---
 
 ## 🛠️ Tools & Technologies
 - **HTML5**  
-- **CSS3 (Media Queries, Flexbox, Grid)**  
-- **JavaScript (for certificate modal)**  
-- **VS Code**  
-- **Chrome DevTools**  
+- **CSS3 (Flexbox, Grid, Media Queries)**  
+- **JavaScript**  
 
 ---
 
 ## 📂 Deliverable
-Updated CSS ensures the website is now **fully responsive** and works well on **desktop, tablet, and mobile viewports**.
+Website is now **fully responsive** and works across desktop, tablet, and mobile.
